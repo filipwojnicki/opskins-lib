@@ -6,7 +6,6 @@ module.exports = class Opskins{
     constructor(apiKey){
         this.apiKey = apiKey;
         this.authHash = Buffer.from(apiKey + ":", "ascii").toString("base64");
-        this.withdraw(478559122, '76561198076762143', 'qDDJCVxa', 'ciekawe czy dziala' ).then((data) => console.log(data));
     }
 
     getBalance(){
